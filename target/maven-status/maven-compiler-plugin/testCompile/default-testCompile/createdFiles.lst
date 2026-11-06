@@ -1,0 +1,9 @@
+com\capstone\tests\ProductListingTest.class
+com\capstone\tests\LoginTest.class
+com\capstone\tests\ShoppingCartTest.class
+com\capstone\tests\NavigationTest.class
+com\capstone\tests\ProductDetailsTest.class
+com\capstone\base\BaseTest.class
+com\capstone\tests\ScreenshotVerificationTest.class
+com\capstone\tests\CheckoutTest.class
+com\capstone\tests\EndToEndTest.class

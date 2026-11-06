@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="274.589" tests="46" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\vennela.vangapally\Documents\selenium-capstone\target\test-classes;C:\Users\vennela.vangapally\Documents\selenium-capstone\target\classes;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-java\4.36.0\selenium-java-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-api\4.36.0\selenium-api-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.36.0\selenium-chrome-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.36.0\selenium-chromium-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-json\4.36.0\selenium-json-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.36.0\selenium-manager-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.36.0\selenium-devtools-v138-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.36.0\selenium-devtools-v139-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v140\4.36.0\selenium-devtools-v140-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.36.0\selenium-edge-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.36.0\selenium-firefox-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-http\4.36.0\selenium-http-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.36.0\selenium-ie-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.36.0\selenium-remote-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-api\1.54.0\opentelemetry-api-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-context\1.54.0\opentelemetry-context-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-common\1.54.0\opentelemetry-common-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.54.0\opentelemetry-exporter-logging-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.54.0\opentelemetry-sdk-common-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.54.0\opentelemetry-sdk-extension-autoconfigure-spi-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.54.0\opentelemetry-sdk-extension-autoconfigure-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.54.0\opentelemetry-sdk-trace-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.54.0\opentelemetry-sdk-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.54.0\opentelemetry-sdk-metrics-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.54.0\opentelemetry-sdk-logs-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\net\bytebuddy\byte-buddy\1.17.7\byte-buddy-1.17.7.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-os\4.36.0\selenium-os-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.36.0\selenium-safari-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-support\4.36.0\selenium-support-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\vennela.vangapally\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\vennela.vangapally\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\vennela.vangapally\.m2\repository\io\github\bonigarcia\webdrivermanager\6.0.1\webdrivermanager-6.0.1.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\github\docker-java\docker-java\3.5.0\docker-java-3.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\github\docker-java\docker-java-core\3.5.0\docker-java-core-3.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\github\docker-java\docker-java-api\3.5.0\docker-java-api-3.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\vennela.vangapally\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\vennela.vangapally\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\vennela.vangapally\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\vennela.vangapally\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.5.0\docker-java-transport-httpclient5-3.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\github\docker-java\docker-java-transport\3.5.0\docker-java-transport-3.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\vennela.vangapally\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\vennela.vangapally\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\vennela.vangapally\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\vennela.vangapally\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\vennela.vangapally\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\vennela.vangapally\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\vennela.vangapally\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\vennela.vangapally\.m2\repository\org\slf4j\slf4j-simple\2.0.17\slf4j-simple-2.0.17.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.5.8-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\vennela.vangapally\AppData\Local\Temp\surefire2297616543769976233\surefirebooter-20261106171017450_3.jar C:\Users\vennela.vangapally\AppData\Local\Temp\surefire2297616543769976233 2026-11-06T17-10-17_191-jvmRun1 surefire-20261106171017450_1tmp surefire_0-20261106171017450_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\vennela.vangapally\Documents\selenium-capstone\target\test-classes;C:\Users\vennela.vangapally\Documents\selenium-capstone\target\classes;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-java\4.36.0\selenium-java-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-api\4.36.0\selenium-api-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.36.0\selenium-chrome-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.36.0\selenium-chromium-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-json\4.36.0\selenium-json-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.36.0\selenium-manager-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.36.0\selenium-devtools-v138-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.36.0\selenium-devtools-v139-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v140\4.36.0\selenium-devtools-v140-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.36.0\selenium-edge-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.36.0\selenium-firefox-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-http\4.36.0\selenium-http-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.36.0\selenium-ie-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.36.0\selenium-remote-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-api\1.54.0\opentelemetry-api-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-context\1.54.0\opentelemetry-context-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-common\1.54.0\opentelemetry-common-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.54.0\opentelemetry-exporter-logging-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.54.0\opentelemetry-sdk-common-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.54.0\opentelemetry-sdk-extension-autoconfigure-spi-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.54.0\opentelemetry-sdk-extension-autoconfigure-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.54.0\opentelemetry-sdk-trace-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.54.0\opentelemetry-sdk-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.54.0\opentelemetry-sdk-metrics-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.54.0\opentelemetry-sdk-logs-1.54.0.jar;C:\Users\vennela.vangapally\.m2\repository\net\bytebuddy\byte-buddy\1.17.7\byte-buddy-1.17.7.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-os\4.36.0\selenium-os-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.36.0\selenium-safari-driver-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\seleniumhq\selenium\selenium-support\4.36.0\selenium-support-4.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\vennela.vangapally\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\vennela.vangapally\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\vennela.vangapally\.m2\repository\io\github\bonigarcia\webdrivermanager\6.0.1\webdrivermanager-6.0.1.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\vennela.vangapally\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\github\docker-java\docker-java\3.5.0\docker-java-3.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\github\docker-java\docker-java-core\3.5.0\docker-java-core-3.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\github\docker-java\docker-java-api\3.5.0\docker-java-api-3.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\vennela.vangapally\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\vennela.vangapally\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\vennela.vangapally\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\vennela.vangapally\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.5.0\docker-java-transport-httpclient5-3.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\com\github\docker-java\docker-java-transport\3.5.0\docker-java-transport-3.5.0.jar;C:\Users\vennela.vangapally\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\vennela.vangapally\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\vennela.vangapally\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\vennela.vangapally\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\vennela.vangapally\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\vennela.vangapally\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\vennela.vangapally\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\vennela.vangapally\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\vennela.vangapally\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\vennela.vangapally\.m2\repository\org\slf4j\slf4j-simple\2.0.17\slf4j-simple-2.0.17.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\vennela.vangapally"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-10-20"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.5.8-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\vennela.vangapally\Documents\selenium-capstone"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\vennela.vangapally\AppData\Local\Temp\surefire2297616543769976233\surefirebooter-20261106171017450_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.5+8-LTS"/>
+    <property name="user.name" value="vennela.vangapally"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-25.0.5+8"/>
+    <property name="localRepository" value="C:\Users\vennela.vangapally\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\VENNEL~1.VAN\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.5"/>
+    <property name="user.dir" value="C:\Users\vennela.vangapally\Documents\selenium-capstone"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.5.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-25.0.5.8-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X64\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X86\;C:\Program Files (x86)\Common Files\Pulse Secure\TNC Client Plugin\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\php;C:\ProgramData\ComposerSetup\bin;C:\Tools\apache-maven-3.9.x\apache-maven-3.10.0\bin;C:\Program Files\nodejs\;C:\Users\vennela.vangapally\AppData\Local\Microsoft\WindowsApps;C:\Users\vennela.vangapally\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\vennela.vangapally\AppData\Roaming\npm;C:\Users\vennela.vangapally\.local\bin;C:\Users\vennela.vangapally\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim;C:\Users\vennela.vangapally\AppData\Roaming\Composer\vendor\bin;c:\Users\vennela.vangapally\.vscode\extensions\vscjava.vscode-java-debug-0.60.0\bundled\scripts\noConfigScripts;c:\Users\vennela.vangapally\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\vennela.vangapally\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="25.0.5+8-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="validLoginShouldNavigateToProductsPage" classname="com.capstone.tests.LoginTest" time="0.732">
+    <system-err><![CDATA[Nov 06, 2026 5:10:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:10:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="validLoginShouldNavigateToProductsPage" classname="com.capstone.tests.LoginTest" time="0.738">
+    <system-err><![CDATA[Nov 06, 2026 5:11:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="emptyPasswordShouldDisplayValidationMessage" classname="com.capstone.tests.LoginTest" time="0.391">
+    <system-err><![CDATA[Nov 06, 2026 5:11:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="emptyUsernameAndPasswordShouldDisplayValidationMessage" classname="com.capstone.tests.LoginTest" time="0.523">
+    <system-err><![CDATA[Nov 06, 2026 5:11:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="emptyUsernameShouldDisplayValidationMessage" classname="com.capstone.tests.LoginTest" time="0.479">
+    <system-err><![CDATA[Nov 06, 2026 5:11:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="invalidPasswordShouldDisplayErrorMessage" classname="com.capstone.tests.LoginTest" time="0.681">
+    <system-err><![CDATA[Nov 06, 2026 5:11:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="lockedOutUserShouldNotBeAbleToLogin" classname="com.capstone.tests.LoginTest" time="0.692">
+    <system-err><![CDATA[Nov 06, 2026 5:11:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="logoutAndBrowserBackShouldNotAllowAccess" classname="com.capstone.tests.LoginTest" time="1.575">
+    <system-err><![CDATA[Nov 06, 2026 5:11:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="productCountShouldMatchExpectedCount" classname="com.capstone.tests.ProductListingTest" time="0.087">
+    <system-err><![CDATA[Nov 06, 2026 5:10:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:10:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="productCountShouldMatchExpectedCount" classname="com.capstone.tests.ProductListingTest" time="0.121">
+    <system-err><![CDATA[Nov 06, 2026 5:11:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="productsShouldSortByNameAscending" classname="com.capstone.tests.ProductListingTest" time="0.439">
+    <system-err><![CDATA[Nov 06, 2026 5:10:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:10:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="productsShouldSortByNameAscending" classname="com.capstone.tests.ProductListingTest" time="0.349">
+    <system-err><![CDATA[Nov 06, 2026 5:11:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="productsShouldSortByNameDescending" classname="com.capstone.tests.ProductListingTest" time="0.36">
+    <system-err><![CDATA[Nov 06, 2026 5:12:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:12:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="productsShouldSortByPriceLowToHigh" classname="com.capstone.tests.ProductListingTest" time="0.511">
+    <system-err><![CDATA[Nov 06, 2026 5:12:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:12:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="productsShouldSortByPriceHighToLow" classname="com.capstone.tests.ProductListingTest" time="0.501">
+    <system-err><![CDATA[Nov 06, 2026 5:12:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:12:13 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="allProductsShouldExistInProductListing" classname="com.capstone.tests.ProductDetailsTest" time="0.147">
+    <system-err><![CDATA[Nov 06, 2026 5:10:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:10:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="allProductsShouldExistInProductListing" classname="com.capstone.tests.ProductDetailsTest" time="0.187">
+    <system-err><![CDATA[Nov 06, 2026 5:12:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:12:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="selectedProductShouldOpenCorrectProductDetailsPage" classname="com.capstone.tests.ProductDetailsTest" time="0.504">
+    <system-err><![CDATA[Nov 06, 2026 5:10:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:10:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="selectedProductShouldOpenCorrectProductDetailsPage" classname="com.capstone.tests.ProductDetailsTest" time="0.458">
+    <system-err><![CDATA[Nov 06, 2026 5:12:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:12:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="addProductToCartAndNavigateBackToProducts" classname="com.capstone.tests.ProductDetailsTest" time="1.166">
+    <system-err><![CDATA[Nov 06, 2026 5:12:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:12:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="singleProductShouldBeAddedToShoppingCart" classname="com.capstone.tests.ShoppingCartTest" time="0.46">
+    <system-err><![CDATA[Nov 06, 2026 5:10:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:10:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="singleProductShouldBeAddedToShoppingCart" classname="com.capstone.tests.ShoppingCartTest" time="0.458">
+    <system-err><![CDATA[Nov 06, 2026 5:12:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:12:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="multipleProductsShouldBeAddedToShoppingCart" classname="com.capstone.tests.ShoppingCartTest" time="0.555">
+    <system-err><![CDATA[Nov 06, 2026 5:10:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:10:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="multipleProductsShouldBeAddedToShoppingCart" classname="com.capstone.tests.ShoppingCartTest" time="0.767">
+    <system-err><![CDATA[Nov 06, 2026 5:12:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:12:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="productShouldBeRemovedFromShoppingCart" classname="com.capstone.tests.ShoppingCartTest" time="20.564">
+    <system-err><![CDATA[Nov 06, 2026 5:12:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:12:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="shoppingCartShouldDisplayCorrectProductDetails" classname="com.capstone.tests.ShoppingCartTest" time="0.37">
+    <system-err><![CDATA[Nov 06, 2026 5:13:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:13:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="continueShoppingButtonShouldNavigateToProductsPage" classname="com.capstone.tests.ShoppingCartTest" time="0.0">
+    <skipped message="expected [Products] but found [Your Cart]"/>
+    <system-err><![CDATA[Nov 06, 2026 5:13:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:13:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="continueShoppingButtonShouldNavigateToProductsPage" classname="com.capstone.tests.ShoppingCartTest" time="0.6">
+    <system-err><![CDATA[Nov 06, 2026 5:13:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:13:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="navigationAllItemsOptionShouldNavigateToProductsPage" classname="com.capstone.tests.NavigationTest" time="1.072">
+    <system-err><![CDATA[Nov 06, 2026 5:10:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:10:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="navigationAllItemsOptionShouldNavigateToProductsPage" classname="com.capstone.tests.NavigationTest" time="1.33">
+    <system-err><![CDATA[Nov 06, 2026 5:13:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:13:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="navigationLogoutOptionShouldNavigateToLoginPage" classname="com.capstone.tests.NavigationTest" time="0.88">
+    <system-err><![CDATA[Nov 06, 2026 5:10:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:10:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="navigationLogoutOptionShouldNavigateToLoginPage" classname="com.capstone.tests.NavigationTest" time="1.183">
+    <system-err><![CDATA[Nov 06, 2026 5:13:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:13:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="navigationMenuShouldOpenSuccessfully" classname="com.capstone.tests.NavigationTest" time="0.868">
+    <system-err><![CDATA[Nov 06, 2026 5:11:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:00 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="navigationMenuShouldOpenSuccessfully" classname="com.capstone.tests.NavigationTest" time="0.899">
+    <system-err><![CDATA[Nov 06, 2026 5:13:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:13:58 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="navigationAboutOptionShouldNavigateToSauceLabsWebsite" classname="com.capstone.tests.NavigationTest" time="6.362">
+    <system-err><![CDATA[Nov 06, 2026 5:13:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:13:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="navigationMenuShouldDisplayExpectedOptions" classname="com.capstone.tests.NavigationTest" time="1.022">
+    <system-err><![CDATA[Nov 06, 2026 5:13:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:13:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="navigationResetAppStateShouldClearShoppingCart" classname="com.capstone.tests.NavigationTest" time="11.453">
+    <system-err><![CDATA[Nov 06, 2026 5:14:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:14:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="completeCheckoutFlowShouldDisplayOrderConfirmation" classname="com.capstone.tests.CheckoutTest" time="0.474">
+    <system-err><![CDATA[Nov 06, 2026 5:11:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="completeCheckoutFlowShouldDisplayOrderConfirmation" classname="com.capstone.tests.CheckoutTest" time="0.625">
+    <system-err><![CDATA[Nov 06, 2026 5:14:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:14:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="checkoutOverviewShouldDisplayOrderSummary" classname="com.capstone.tests.CheckoutTest" time="0.613">
+    <system-err><![CDATA[Nov 06, 2026 5:14:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:14:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="emptyCheckoutFormShouldDisplayFirstNameRequiredValidation" classname="com.capstone.tests.CheckoutTest" time="0.306">
+    <system-err><![CDATA[Nov 06, 2026 5:14:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:14:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="missingFirstNameShouldDisplayValidationMessage" classname="com.capstone.tests.CheckoutTest" time="0.598">
+    <system-err><![CDATA[Nov 06, 2026 5:14:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:14:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="missingLastNameShouldDisplayValidationMessage" classname="com.capstone.tests.CheckoutTest" time="0.552">
+    <system-err><![CDATA[Nov 06, 2026 5:14:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:14:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="missingPostalCodeShouldDisplayValidationMessage" classname="com.capstone.tests.CheckoutTest" time="0.473">
+    <system-err><![CDATA[Nov 06, 2026 5:14:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:14:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="completePurchaseJourneyShouldDisplayOrderConfirmation" classname="com.capstone.tests.EndToEndTest" time="1.622">
+    <system-err><![CDATA[Nov 06, 2026 5:11:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:11:13 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="completePurchaseJourneyShouldDisplayOrderConfirmation" classname="com.capstone.tests.EndToEndTest" time="1.595">
+    <system-err><![CDATA[Nov 06, 2026 5:14:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 156
+Nov 06, 2026 5:14:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 156.0.8078.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>
