@@ -3,6 +3,8 @@ package com.capstone.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -15,17 +17,21 @@ public class ShoppingCartPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
 
-    private final By shoppingCartItems =
-            By.cssSelector("[data-test='inventory-item']");
+    //private final By shoppingCartItems =By.cssSelector("[data-test='inventory-item']");
+    @FindBy(css = "[data-test='inventory-item']")
+    private List<WebElement> shoppingCartItems;
 
-    private final By shoppingCartProductNames =
-            By.cssSelector("[data-test='inventory-item-name']");
+    //private final By shoppingCartProductNames =By.cssSelector("[data-test='inventory-item-name']");
+    @FindBy(css = "[data-test='inventory-item-name']")
+    private List<WebElement> shoppingCartProductNames;
 
-    private final By continueShoppingButton =
-            By.id("continue-shopping");
+    //private final By continueShoppingButton =By.id("continue-shopping");
+    @FindBy(id = "continue-shopping")
+    private WebElement continueShoppingButton;
 
-    private final By checkoutButton =
-            By.id("checkout");
+    //private final By checkoutButton =By.id("checkout");
+    @FindBy(id = "checkout")
+    private WebElement checkoutButton;
 
     public ShoppingCartPage(WebDriver driver) {
 
@@ -35,6 +41,7 @@ public class ShoppingCartPage {
                 driver,
                 Duration.ofSeconds(10)
         );
+        PageFactory.initElements( driver,this);
     }
 
     public boolean isProductPresentInShoppingCart(
@@ -78,22 +85,28 @@ public class ShoppingCartPage {
 
     public int getShoppingCartItemsCount() {
 
-        return driver.findElements(
-                shoppingCartItems
-        ).size();
+        //return driver.findElements(shoppingCartItems).size();
+        return shoppingCartItems.size();
     }
 
     public List<String> getShoppingCartProductNames() {
 
-        if (driver.findElements(
-                shoppingCartProductNames
-        ).isEmpty()) {
+        // if (driver.findElements(shoppingCartProductNames).isEmpty()) {
+
+        //     return List.of();
+        // }
+        
+        if (shoppingCartProductNames.isEmpty()) {
 
             return List.of();
         }
 
-        return driver.findElements(
-                        shoppingCartProductNames)
+        // return driver.findElements(
+        //                 shoppingCartProductNames)
+        //         .stream()
+        //         .map(WebElement::getText)
+        //         .collect(Collectors.toList());
+        return shoppingCartProductNames
                 .stream()
                 .map(WebElement::getText)
                 .collect(Collectors.toList());

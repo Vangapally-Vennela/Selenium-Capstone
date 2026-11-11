@@ -103,7 +103,7 @@
                     <div class="method-list-content skipped suite-Selenium_Capstone_Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Selenium_Capstone_Suite" title="com.capstone.tests.ShoppingCartTest" class="method navigator-link" hash-for-method="continueShoppingButtonShouldNavigateToProductsPage">continueShoppingButtonShouldNavigateToProductsPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Selenium_Capstone_Suite" title="com.capstone.tests.ProductDetailsTest" class="method navigator-link" hash-for-method="addProductToCartAndNavigateBackToProducts">addProductToCartAndNavigateBackToProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Selenium_Capstone_Suite -->
@@ -355,21 +355,49 @@
           <div class="suite-Selenium_Capstone_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.capstone.tests.ShoppingCartTest</span>
+              <span class="class-name">com.capstone.tests.ProductDetailsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="continueShoppingButtonShouldNavigateToProductsPage">
-                  </a> <!-- continueShoppingButtonShouldNavigateToProductsPage -->
-                  <span class="method-name">continueShoppingButtonShouldNavigateToProductsPage</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Products] but found [Your Cart]
-	at com.capstone.tests.ShoppingCartTest.continueShoppingButtonShouldNavigateToProductsPage(ShoppingCartTest.java:194)
+                  <a name="addProductToCartAndNavigateBackToProducts">
+                  </a> <!-- addProductToCartAndNavigateBackToProducts -->
+                  <span class="method-name">addProductToCartAndNavigateBackToProducts</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=157.0.8103.39)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [939f68a8652379bc20ca307b1863dc9c, isElementDisplayed {id=f.4F37A20B77D47494455ABED02097132C.d.8A8F92F9881EE6373C15B2D7ED40F371.e.20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.39, chrome: {chromedriverVersion: 157.0.8103.50 (049750111b1e..., userDataDir: C:\Users\VENNEL~1.VAN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64104}, goog:processID: 26320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64104/devtoo..., se:cdpVersion: 157.0.8103.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (939f68a8652379bc20ca307b1863dc9c)] -&gt; css selector: [data-test^=&apos;add-to-cart&apos;]]
+Session ID: 939f68a8652379bc20ca307b1863dc9c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.capstone.utils.WaitUtils.waitForClickable(WaitUtils.java:33)
+	at com.capstone.pages.ProductDetailsPage.addToCart(ProductDetailsPage.java:73)
+	at com.capstone.tests.ProductDetailsTest.addProductToCartAndNavigateBackToProducts(ProductDetailsTest.java:136)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 35 stack frames
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Verify Continue Shopping navigates back to the Products page)                  </em>
+(Verify product can be added to cart and user can navigate back to products page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1097,187 +1125,187 @@ data.addRows(46);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'productShouldBeRemovedFromShoppingCart')
 data.setCell(0, 2, 'com.capstone.tests.ShoppingCartTest')
-data.setCell(0, 3, 20565);
+data.setCell(0, 3, 20736);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'navigationResetAppStateShouldClearShoppingCart')
 data.setCell(1, 2, 'com.capstone.tests.NavigationTest')
-data.setCell(1, 3, 11453);
+data.setCell(1, 3, 11599);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'navigationAboutOptionShouldNavigateToSauceLabsWebsite')
 data.setCell(2, 2, 'com.capstone.tests.NavigationTest')
-data.setCell(2, 3, 6362);
+data.setCell(2, 3, 10497);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'completePurchaseJourneyShouldDisplayOrderConfirmation')
 data.setCell(3, 2, 'com.capstone.tests.EndToEndTest')
-data.setCell(3, 3, 1621);
+data.setCell(3, 3, 2565);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'completePurchaseJourneyShouldDisplayOrderConfirmation')
 data.setCell(4, 2, 'com.capstone.tests.EndToEndTest')
-data.setCell(4, 3, 1594);
+data.setCell(4, 3, 2123);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'logoutAndBrowserBackShouldNotAllowAccess')
 data.setCell(5, 2, 'com.capstone.tests.LoginTest')
-data.setCell(5, 3, 1575);
+data.setCell(5, 3, 1729);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'navigationAllItemsOptionShouldNavigateToProductsPage')
-data.setCell(6, 2, 'com.capstone.tests.NavigationTest')
-data.setCell(6, 3, 1330);
+data.setCell(6, 1, 'addProductToCartAndNavigateBackToProducts')
+data.setCell(6, 2, 'com.capstone.tests.ProductDetailsTest')
+data.setCell(6, 3, 1486);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'navigationLogoutOptionShouldNavigateToLoginPage')
-data.setCell(7, 2, 'com.capstone.tests.NavigationTest')
-data.setCell(7, 3, 1184);
+data.setCell(7, 1, 'lockedOutUserShouldNotBeAbleToLogin')
+data.setCell(7, 2, 'com.capstone.tests.LoginTest')
+data.setCell(7, 3, 1424);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'addProductToCartAndNavigateBackToProducts')
-data.setCell(8, 2, 'com.capstone.tests.ProductDetailsTest')
-data.setCell(8, 3, 1166);
+data.setCell(8, 1, 'completeCheckoutFlowShouldDisplayOrderConfirmation')
+data.setCell(8, 2, 'com.capstone.tests.CheckoutTest')
+data.setCell(8, 3, 1378);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'navigationAllItemsOptionShouldNavigateToProductsPage')
 data.setCell(9, 2, 'com.capstone.tests.NavigationTest')
-data.setCell(9, 3, 1072);
+data.setCell(9, 3, 1344);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'navigationMenuShouldDisplayExpectedOptions')
+data.setCell(10, 1, 'navigationAllItemsOptionShouldNavigateToProductsPage')
 data.setCell(10, 2, 'com.capstone.tests.NavigationTest')
-data.setCell(10, 3, 1021);
+data.setCell(10, 3, 1333);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'navigationMenuShouldOpenSuccessfully')
-data.setCell(11, 2, 'com.capstone.tests.NavigationTest')
-data.setCell(11, 3, 898);
+data.setCell(11, 1, 'missingLastNameShouldDisplayValidationMessage')
+data.setCell(11, 2, 'com.capstone.tests.CheckoutTest')
+data.setCell(11, 3, 1143);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'navigationLogoutOptionShouldNavigateToLoginPage')
 data.setCell(12, 2, 'com.capstone.tests.NavigationTest')
-data.setCell(12, 3, 880);
+data.setCell(12, 3, 1091);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'navigationMenuShouldOpenSuccessfully')
-data.setCell(13, 2, 'com.capstone.tests.NavigationTest')
-data.setCell(13, 3, 869);
+data.setCell(13, 1, 'missingPostalCodeShouldDisplayValidationMessage')
+data.setCell(13, 2, 'com.capstone.tests.CheckoutTest')
+data.setCell(13, 3, 1063);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'multipleProductsShouldBeAddedToShoppingCart')
-data.setCell(14, 2, 'com.capstone.tests.ShoppingCartTest')
-data.setCell(14, 3, 765);
+data.setCell(14, 1, 'navigationMenuShouldOpenSuccessfully')
+data.setCell(14, 2, 'com.capstone.tests.NavigationTest')
+data.setCell(14, 3, 1056);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'validLoginShouldNavigateToProductsPage')
 data.setCell(15, 2, 'com.capstone.tests.LoginTest')
-data.setCell(15, 3, 737);
+data.setCell(15, 3, 1033);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'validLoginShouldNavigateToProductsPage')
-data.setCell(16, 2, 'com.capstone.tests.LoginTest')
-data.setCell(16, 3, 726);
+data.setCell(16, 1, 'selectedProductShouldOpenCorrectProductDetailsPage')
+data.setCell(16, 2, 'com.capstone.tests.ProductDetailsTest')
+data.setCell(16, 3, 1025);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'lockedOutUserShouldNotBeAbleToLogin')
-data.setCell(17, 2, 'com.capstone.tests.LoginTest')
-data.setCell(17, 3, 691);
+data.setCell(17, 1, 'navigationLogoutOptionShouldNavigateToLoginPage')
+data.setCell(17, 2, 'com.capstone.tests.NavigationTest')
+data.setCell(17, 3, 940);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'invalidPasswordShouldDisplayErrorMessage')
-data.setCell(18, 2, 'com.capstone.tests.LoginTest')
-data.setCell(18, 3, 681);
+data.setCell(18, 1, 'completeCheckoutFlowShouldDisplayOrderConfirmation')
+data.setCell(18, 2, 'com.capstone.tests.CheckoutTest')
+data.setCell(18, 3, 931);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'emptyUsernameAndPasswordShouldDisplayValidationMessage')
-data.setCell(19, 2, 'com.capstone.tests.LoginTest')
-data.setCell(19, 3, 632);
+data.setCell(19, 1, 'missingFirstNameShouldDisplayValidationMessage')
+data.setCell(19, 2, 'com.capstone.tests.CheckoutTest')
+data.setCell(19, 3, 925);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'completeCheckoutFlowShouldDisplayOrderConfirmation')
-data.setCell(20, 2, 'com.capstone.tests.CheckoutTest')
-data.setCell(20, 3, 624);
+data.setCell(20, 1, 'invalidPasswordShouldDisplayErrorMessage')
+data.setCell(20, 2, 'com.capstone.tests.LoginTest')
+data.setCell(20, 3, 910);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'checkoutOverviewShouldDisplayOrderSummary')
-data.setCell(21, 2, 'com.capstone.tests.CheckoutTest')
-data.setCell(21, 3, 613);
+data.setCell(21, 1, 'navigationMenuShouldDisplayExpectedOptions')
+data.setCell(21, 2, 'com.capstone.tests.NavigationTest')
+data.setCell(21, 3, 906);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'continueShoppingButtonShouldNavigateToProductsPage')
-data.setCell(22, 2, 'com.capstone.tests.ShoppingCartTest')
-data.setCell(22, 3, 600);
+data.setCell(22, 1, 'navigationMenuShouldOpenSuccessfully')
+data.setCell(22, 2, 'com.capstone.tests.NavigationTest')
+data.setCell(22, 3, 874);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'missingFirstNameShouldDisplayValidationMessage')
-data.setCell(23, 2, 'com.capstone.tests.CheckoutTest')
-data.setCell(23, 3, 599);
+data.setCell(23, 1, 'continueShoppingButtonShouldNavigateToProductsPage')
+data.setCell(23, 2, 'com.capstone.tests.ShoppingCartTest')
+data.setCell(23, 3, 855);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'continueShoppingButtonShouldNavigateToProductsPage')
+data.setCell(24, 1, 'multipleProductsShouldBeAddedToShoppingCart')
 data.setCell(24, 2, 'com.capstone.tests.ShoppingCartTest')
-data.setCell(24, 3, 560);
+data.setCell(24, 3, 852);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'multipleProductsShouldBeAddedToShoppingCart')
-data.setCell(25, 2, 'com.capstone.tests.ShoppingCartTest')
-data.setCell(25, 3, 558);
+data.setCell(25, 1, 'checkoutOverviewShouldDisplayOrderSummary')
+data.setCell(25, 2, 'com.capstone.tests.CheckoutTest')
+data.setCell(25, 3, 815);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'missingLastNameShouldDisplayValidationMessage')
-data.setCell(26, 2, 'com.capstone.tests.CheckoutTest')
-data.setCell(26, 3, 552);
+data.setCell(26, 1, 'validLoginShouldNavigateToProductsPage')
+data.setCell(26, 2, 'com.capstone.tests.LoginTest')
+data.setCell(26, 3, 788);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'productsShouldSortByPriceLowToHigh')
-data.setCell(27, 2, 'com.capstone.tests.ProductListingTest')
-data.setCell(27, 3, 512);
+data.setCell(27, 1, 'singleProductShouldBeAddedToShoppingCart')
+data.setCell(27, 2, 'com.capstone.tests.ShoppingCartTest')
+data.setCell(27, 3, 780);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'selectedProductShouldOpenCorrectProductDetailsPage')
-data.setCell(28, 2, 'com.capstone.tests.ProductDetailsTest')
-data.setCell(28, 3, 504);
+data.setCell(28, 1, 'productsShouldSortByNameAscending')
+data.setCell(28, 2, 'com.capstone.tests.ProductListingTest')
+data.setCell(28, 3, 698);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'productsShouldSortByPriceHighToLow')
+data.setCell(29, 1, 'productsShouldSortByNameDescending')
 data.setCell(29, 2, 'com.capstone.tests.ProductListingTest')
-data.setCell(29, 3, 501);
+data.setCell(29, 3, 674);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'emptyUsernameShouldDisplayValidationMessage')
+data.setCell(30, 1, 'emptyPasswordShouldDisplayValidationMessage')
 data.setCell(30, 2, 'com.capstone.tests.LoginTest')
-data.setCell(30, 3, 478);
+data.setCell(30, 3, 661);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'completeCheckoutFlowShouldDisplayOrderConfirmation')
-data.setCell(31, 2, 'com.capstone.tests.CheckoutTest')
-data.setCell(31, 3, 474);
+data.setCell(31, 1, 'multipleProductsShouldBeAddedToShoppingCart')
+data.setCell(31, 2, 'com.capstone.tests.ShoppingCartTest')
+data.setCell(31, 3, 655);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'missingPostalCodeShouldDisplayValidationMessage')
-data.setCell(32, 2, 'com.capstone.tests.CheckoutTest')
-data.setCell(32, 3, 474);
+data.setCell(32, 1, 'selectedProductShouldOpenCorrectProductDetailsPage')
+data.setCell(32, 2, 'com.capstone.tests.ProductDetailsTest')
+data.setCell(32, 3, 606);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'singleProductShouldBeAddedToShoppingCart')
-data.setCell(33, 2, 'com.capstone.tests.ShoppingCartTest')
-data.setCell(33, 3, 460);
+data.setCell(33, 1, 'emptyUsernameShouldDisplayValidationMessage')
+data.setCell(33, 2, 'com.capstone.tests.LoginTest')
+data.setCell(33, 3, 596);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'selectedProductShouldOpenCorrectProductDetailsPage')
-data.setCell(34, 2, 'com.capstone.tests.ProductDetailsTest')
-data.setCell(34, 3, 458);
+data.setCell(34, 1, 'singleProductShouldBeAddedToShoppingCart')
+data.setCell(34, 2, 'com.capstone.tests.ShoppingCartTest')
+data.setCell(34, 3, 586);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'singleProductShouldBeAddedToShoppingCart')
-data.setCell(35, 2, 'com.capstone.tests.ShoppingCartTest')
-data.setCell(35, 3, 457);
+data.setCell(35, 1, 'productsShouldSortByPriceLowToHigh')
+data.setCell(35, 2, 'com.capstone.tests.ProductListingTest')
+data.setCell(35, 3, 583);
 data.setCell(36, 0, 36)
 data.setCell(36, 1, 'productsShouldSortByNameAscending')
 data.setCell(36, 2, 'com.capstone.tests.ProductListingTest')
-data.setCell(36, 3, 438);
+data.setCell(36, 3, 566);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'emptyPasswordShouldDisplayValidationMessage')
-data.setCell(37, 2, 'com.capstone.tests.LoginTest')
-data.setCell(37, 3, 391);
+data.setCell(37, 1, 'productsShouldSortByPriceHighToLow')
+data.setCell(37, 2, 'com.capstone.tests.ProductListingTest')
+data.setCell(37, 3, 553);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'shoppingCartShouldDisplayCorrectProductDetails')
-data.setCell(38, 2, 'com.capstone.tests.ShoppingCartTest')
-data.setCell(38, 3, 369);
+data.setCell(38, 1, 'emptyUsernameAndPasswordShouldDisplayValidationMessage')
+data.setCell(38, 2, 'com.capstone.tests.LoginTest')
+data.setCell(38, 3, 532);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'productsShouldSortByNameDescending')
-data.setCell(39, 2, 'com.capstone.tests.ProductListingTest')
-data.setCell(39, 3, 361);
+data.setCell(39, 1, 'shoppingCartShouldDisplayCorrectProductDetails')
+data.setCell(39, 2, 'com.capstone.tests.ShoppingCartTest')
+data.setCell(39, 3, 494);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'productsShouldSortByNameAscending')
-data.setCell(40, 2, 'com.capstone.tests.ProductListingTest')
-data.setCell(40, 3, 349);
+data.setCell(40, 1, 'addProductToCartAndNavigateBackToProducts')
+data.setCell(40, 2, 'com.capstone.tests.ProductDetailsTest')
+data.setCell(40, 3, 418);
 data.setCell(41, 0, 41)
 data.setCell(41, 1, 'emptyCheckoutFormShouldDisplayFirstNameRequiredValidation')
 data.setCell(41, 2, 'com.capstone.tests.CheckoutTest')
-data.setCell(41, 3, 306);
+data.setCell(41, 3, 406);
 data.setCell(42, 0, 42)
 data.setCell(42, 1, 'allProductsShouldExistInProductListing')
 data.setCell(42, 2, 'com.capstone.tests.ProductDetailsTest')
-data.setCell(42, 3, 186);
+data.setCell(42, 3, 295);
 data.setCell(43, 0, 43)
 data.setCell(43, 1, 'allProductsShouldExistInProductListing')
 data.setCell(43, 2, 'com.capstone.tests.ProductDetailsTest')
-data.setCell(43, 3, 147);
+data.setCell(43, 3, 176);
 data.setCell(44, 0, 44)
 data.setCell(44, 1, 'productCountShouldMatchExpectedCount')
 data.setCell(44, 2, 'com.capstone.tests.ProductListingTest')
-data.setCell(44, 3, 120);
+data.setCell(44, 3, 172);
 data.setCell(45, 0, 45)
 data.setCell(45, 1, 'productCountShouldMatchExpectedCount')
 data.setCell(45, 2, 'com.capstone.tests.ProductListingTest')
-data.setCell(45, 3, 86);
+data.setCell(45, 3, 119);
 window.suiteTableData['Selenium_Capstone_Suite']= { tableData: data, tableDiv: 'times-div-Selenium_Capstone_Suite'}
 return data;
 }
@@ -1387,766 +1415,766 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePageObjects</span>
-                <span class="method-start">3013 ms</span>
+                <span class="method-start">12846 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLoginShouldNavigateToProductsPage</span>
-                <span class="method-start">3020 ms</span>
+                <span class="method-start">12938 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3754 ms</span>
+                <span class="method-start">13738 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.ProductListingTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4010 ms</span>
+                <span class="method-start">14190 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">6782 ms</span>
+                <span class="method-start">22198 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productCountShouldMatchExpectedCount</span>
-                <span class="method-start">7274 ms</span>
+                <span class="method-start">22783 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7361 ms</span>
+                <span class="method-start">22904 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">7579 ms</span>
+                <span class="method-start">23207 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">10684 ms</span>
+                <span class="method-start">31439 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productsShouldSortByNameAscending</span>
-                <span class="method-start">11294 ms</span>
+                <span class="method-start">32081 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11734 ms</span>
+                <span class="method-start">32649 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.ProductDetailsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">12070 ms</span>
+                <span class="method-start">32968 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">15736 ms</span>
+                <span class="method-start">42079 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">allProductsShouldExistInProductListing</span>
-                <span class="method-start">16261 ms</span>
+                <span class="method-start">42861 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16409 ms</span>
+                <span class="method-start">43157 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">16642 ms</span>
+                <span class="method-start">43510 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">19661 ms</span>
+                <span class="method-start">52776 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectedProductShouldOpenCorrectProductDetailsPage</span>
-                <span class="method-start">20291 ms</span>
+                <span class="method-start">53592 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20796 ms</span>
+                <span class="method-start">54618 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.ShoppingCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">21091 ms</span>
+                <span class="method-start">55054 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">24249 ms</span>
+                <span class="method-start">65520 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">singleProductShouldBeAddedToShoppingCart</span>
-                <span class="method-start">24946 ms</span>
+                <span class="method-start">67498 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25407 ms</span>
+                <span class="method-start">68279 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">25726 ms</span>
+                <span class="method-start">69380 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">28802 ms</span>
+                <span class="method-start">78103 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">multipleProductsShouldBeAddedToShoppingCart</span>
-                <span class="method-start">29428 ms</span>
+                <span class="method-start">78798 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29986 ms</span>
+                <span class="method-start">79651 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.NavigationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">30192 ms</span>
+                <span class="method-start">79969 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigationTestSetup</span>
-                <span class="method-start">33408 ms</span>
+                <span class="method-start">89375 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigationAllItemsOptionShouldNavigateToProductsPage</span>
-                <span class="method-start">33949 ms</span>
+                <span class="method-start">90091 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35021 ms</span>
+                <span class="method-start">91436 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">35227 ms</span>
+                <span class="method-start">91677 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigationTestSetup</span>
-                <span class="method-start">38342 ms</span>
+                <span class="method-start">100201 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigationLogoutOptionShouldNavigateToLoginPage</span>
-                <span class="method-start">38971 ms</span>
+                <span class="method-start">101164 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39852 ms</span>
+                <span class="method-start">102256 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">40059 ms</span>
+                <span class="method-start">102737 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigationTestSetup</span>
-                <span class="method-start">42999 ms</span>
+                <span class="method-start">111598 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigationMenuShouldOpenSuccessfully</span>
-                <span class="method-start">43583 ms</span>
+                <span class="method-start">112590 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">44453 ms</span>
+                <span class="method-start">113647 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.CheckoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">44640 ms</span>
+                <span class="method-start">114056 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupCheckoutPrecondition</span>
-                <span class="method-start">51563 ms</span>
+                <span class="method-start">122589 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">completeCheckoutFlowShouldDisplayOrderConfirmation</span>
-                <span class="method-start">52084 ms</span>
+                <span class="method-start">124130 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">52558 ms</span>
+                <span class="method-start">125509 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.EndToEndTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">52765 ms</span>
+                <span class="method-start">127296 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">completePurchaseJourneyShouldDisplayOrderConfirmation</span>
-                <span class="method-start">55632 ms</span>
+                <span class="method-start">135960 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">57254 ms</span>
+                <span class="method-start">138083 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">59344 ms</span>
+                <span class="method-start">139586 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePageObjects</span>
-                <span class="method-start">62161 ms</span>
+                <span class="method-start">146568 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyPasswordShouldDisplayValidationMessage</span>
-                <span class="method-start">62162 ms</span>
+                <span class="method-start">146570 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">62554 ms</span>
+                <span class="method-start">147232 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">62772 ms</span>
+                <span class="method-start">149070 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePageObjects</span>
-                <span class="method-start">65897 ms</span>
+                <span class="method-start">156761 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyUsernameAndPasswordShouldDisplayValidationMessage</span>
-                <span class="method-start">65898 ms</span>
+                <span class="method-start">156764 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">66531 ms</span>
+                <span class="method-start">157297 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">66840 ms</span>
+                <span class="method-start">157594 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePageObjects</span>
-                <span class="method-start">70653 ms</span>
+                <span class="method-start">165850 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyUsernameShouldDisplayValidationMessage</span>
-                <span class="method-start">70654 ms</span>
+                <span class="method-start">165853 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">71133 ms</span>
+                <span class="method-start">166450 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">72918 ms</span>
+                <span class="method-start">166755 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePageObjects</span>
-                <span class="method-start">76191 ms</span>
+                <span class="method-start">174383 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidPasswordShouldDisplayErrorMessage</span>
-                <span class="method-start">76191 ms</span>
+                <span class="method-start">174385 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">76873 ms</span>
+                <span class="method-start">175296 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">77260 ms</span>
+                <span class="method-start">175613 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePageObjects</span>
-                <span class="method-start">80818 ms</span>
+                <span class="method-start">185097 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">lockedOutUserShouldNotBeAbleToLogin</span>
-                <span class="method-start">80819 ms</span>
+                <span class="method-start">185100 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">81511 ms</span>
+                <span class="method-start">186524 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">81847 ms</span>
+                <span class="method-start">186969 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePageObjects</span>
-                <span class="method-start">85172 ms</span>
+                <span class="method-start">195843 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logoutAndBrowserBackShouldNotAllowAccess</span>
-                <span class="method-start">85172 ms</span>
+                <span class="method-start">195845 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">86748 ms</span>
+                <span class="method-start">197575 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">87005 ms</span>
+                <span class="method-start">197828 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePageObjects</span>
-                <span class="method-start">90396 ms</span>
+                <span class="method-start">207242 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLoginShouldNavigateToProductsPage</span>
-                <span class="method-start">90397 ms</span>
+                <span class="method-start">207254 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">91135 ms</span>
+                <span class="method-start">208288 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.ProductListingTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">91417 ms</span>
+                <span class="method-start">208801 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">94749 ms</span>
+                <span class="method-start">218433 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productCountShouldMatchExpectedCount</span>
-                <span class="method-start">95388 ms</span>
+                <span class="method-start">220209 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">95509 ms</span>
+                <span class="method-start">220384 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">96055 ms</span>
+                <span class="method-start">220866 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">99724 ms</span>
+                <span class="method-start">230611 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productsShouldSortByNameAscending</span>
-                <span class="method-start">100222 ms</span>
+                <span class="method-start">231769 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">100572 ms</span>
+                <span class="method-start">232468 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">102314 ms</span>
+                <span class="method-start">232783 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">105829 ms</span>
+                <span class="method-start">244755 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productsShouldSortByNameDescending</span>
-                <span class="method-start">106275 ms</span>
+                <span class="method-start">245621 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">106636 ms</span>
+                <span class="method-start">246296 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">106887 ms</span>
+                <span class="method-start">246606 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">110616 ms</span>
+                <span class="method-start">255389 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productsShouldSortByPriceLowToHigh</span>
-                <span class="method-start">111226 ms</span>
+                <span class="method-start">256076 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">111738 ms</span>
+                <span class="method-start">256660 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">112025 ms</span>
+                <span class="method-start">256994 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">115438 ms</span>
+                <span class="method-start">264738 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productsShouldSortByPriceHighToLow</span>
-                <span class="method-start">116063 ms</span>
+                <span class="method-start">265426 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">116565 ms</span>
+                <span class="method-start">265979 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.ProductDetailsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">116817 ms</span>
+                <span class="method-start">266350 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">120380 ms</span>
+                <span class="method-start">279527 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">allProductsShouldExistInProductListing</span>
-                <span class="method-start">120927 ms</span>
+                <span class="method-start">280174 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">121114 ms</span>
+                <span class="method-start">280350 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">121395 ms</span>
+                <span class="method-start">280653 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">124534 ms</span>
+                <span class="method-start">288206 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectedProductShouldOpenCorrectProductDetailsPage</span>
-                <span class="method-start">125156 ms</span>
+                <span class="method-start">288771 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">125615 ms</span>
+                <span class="method-start">289378 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">125888 ms</span>
+                <span class="method-start">289675 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">129823 ms</span>
+                <span class="method-start">302797 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addProductToCartAndNavigateBackToProducts</span>
-                <span class="method-start">130418 ms</span>
+                <span class="method-start">303603 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">131584 ms</span>
+                <span class="method-start">304025 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">304513 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApplication</span>
+                <span class="method-start">312680 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProductToCartAndNavigateBackToProducts</span>
+                <span class="method-start">313665 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">315151 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.ShoppingCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">131809 ms</span>
+                <span class="method-start">315566 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">134886 ms</span>
+                <span class="method-start">325176 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">singleProductShouldBeAddedToShoppingCart</span>
-                <span class="method-start">135506 ms</span>
+                <span class="method-start">326249 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">135963 ms</span>
+                <span class="method-start">326836 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">136238 ms</span>
+                <span class="method-start">327270 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">139703 ms</span>
+                <span class="method-start">335988 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">multipleProductsShouldBeAddedToShoppingCart</span>
-                <span class="method-start">140447 ms</span>
+                <span class="method-start">336562 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">141213 ms</span>
+                <span class="method-start">337218 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">141649 ms</span>
+                <span class="method-start">337480 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">145065 ms</span>
+                <span class="method-start">345235 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productShouldBeRemovedFromShoppingCart</span>
-                <span class="method-start">145695 ms</span>
+                <span class="method-start">345832 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">166260 ms</span>
+                <span class="method-start">366569 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">166495 ms</span>
+                <span class="method-start">366875 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">174248 ms</span>
+                <span class="method-start">373955 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shoppingCartShouldDisplayCorrectProductDetails</span>
-                <span class="method-start">175019 ms</span>
+                <span class="method-start">374795 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">175389 ms</span>
+                <span class="method-start">375290 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">175729 ms</span>
+                <span class="method-start">375900 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">178968 ms</span>
+                <span class="method-start">385791 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">continueShoppingButtonShouldNavigateToProductsPage</span>
-                <span class="method-start">179466 ms</span>
+                <span class="method-start">386762 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">180027 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">181808 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">184687 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">continueShoppingButtonShouldNavigateToProductsPage</span>
-                <span class="method-start">185547 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">186148 ms</span>
+                <span class="method-start">387618 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.NavigationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">186425 ms</span>
+                <span class="method-start">388029 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigationTestSetup</span>
-                <span class="method-start">189997 ms</span>
+                <span class="method-start">398007 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigationAboutOptionShouldNavigateToSauceLabsWebsite</span>
-                <span class="method-start">190627 ms</span>
+                <span class="method-start">398850 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">196990 ms</span>
+                <span class="method-start">409347 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">197792 ms</span>
+                <span class="method-start">409705 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigationTestSetup</span>
-                <span class="method-start">201759 ms</span>
+                <span class="method-start">416815 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigationAllItemsOptionShouldNavigateToProductsPage</span>
-                <span class="method-start">202557 ms</span>
+                <span class="method-start">417528 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">203887 ms</span>
+                <span class="method-start">418862 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">204240 ms</span>
+                <span class="method-start">419231 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigationTestSetup</span>
-                <span class="method-start">207884 ms</span>
+                <span class="method-start">435871 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigationLogoutOptionShouldNavigateToLoginPage</span>
-                <span class="method-start">208658 ms</span>
+                <span class="method-start">436369 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">209842 ms</span>
+                <span class="method-start">437310 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">210205 ms</span>
+                <span class="method-start">437535 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigationTestSetup</span>
-                <span class="method-start">214541 ms</span>
+                <span class="method-start">444923 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigationMenuShouldDisplayExpectedOptions</span>
-                <span class="method-start">215423 ms</span>
+                <span class="method-start">445536 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">216445 ms</span>
+                <span class="method-start">446443 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">216731 ms</span>
+                <span class="method-start">446748 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigationTestSetup</span>
-                <span class="method-start">220344 ms</span>
+                <span class="method-start">454473 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigationMenuShouldOpenSuccessfully</span>
-                <span class="method-start">221002 ms</span>
+                <span class="method-start">455135 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">221901 ms</span>
+                <span class="method-start">456009 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">222190 ms</span>
+                <span class="method-start">456288 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigationTestSetup</span>
-                <span class="method-start">225348 ms</span>
+                <span class="method-start">463507 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigationResetAppStateShouldClearShoppingCart</span>
-                <span class="method-start">225840 ms</span>
+                <span class="method-start">464132 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">237293 ms</span>
+                <span class="method-start">475733 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.CheckoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">239087 ms</span>
+                <span class="method-start">477844 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupCheckoutPrecondition</span>
-                <span class="method-start">241631 ms</span>
+                <span class="method-start">485110 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkoutOverviewShouldDisplayOrderSummary</span>
-                <span class="method-start">242560 ms</span>
+                <span class="method-start">486325 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">243174 ms</span>
+                <span class="method-start">487140 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">243402 ms</span>
+                <span class="method-start">487418 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupCheckoutPrecondition</span>
-                <span class="method-start">246591 ms</span>
+                <span class="method-start">494840 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">completeCheckoutFlowShouldDisplayOrderConfirmation</span>
-                <span class="method-start">247441 ms</span>
+                <span class="method-start">495811 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">248066 ms</span>
+                <span class="method-start">496742 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">248268 ms</span>
+                <span class="method-start">497026 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupCheckoutPrecondition</span>
-                <span class="method-start">251338 ms</span>
+                <span class="method-start">506167 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyCheckoutFormShouldDisplayFirstNameRequiredValidation</span>
-                <span class="method-start">252126 ms</span>
+                <span class="method-start">507306 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">252432 ms</span>
+                <span class="method-start">507714 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">252680 ms</span>
+                <span class="method-start">507995 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupCheckoutPrecondition</span>
-                <span class="method-start">256089 ms</span>
+                <span class="method-start">515475 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">missingFirstNameShouldDisplayValidationMessage</span>
-                <span class="method-start">256788 ms</span>
+                <span class="method-start">516690 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">257387 ms</span>
+                <span class="method-start">517615 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">259156 ms</span>
+                <span class="method-start">517953 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupCheckoutPrecondition</span>
-                <span class="method-start">261970 ms</span>
+                <span class="method-start">526665 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">missingLastNameShouldDisplayValidationMessage</span>
-                <span class="method-start">262700 ms</span>
+                <span class="method-start">528332 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">263252 ms</span>
+                <span class="method-start">529476 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">263540 ms</span>
+                <span class="method-start">529923 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupCheckoutPrecondition</span>
-                <span class="method-start">266770 ms</span>
+                <span class="method-start">539522 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">missingPostalCodeShouldDisplayValidationMessage</span>
-                <span class="method-start">267539 ms</span>
+                <span class="method-start">541333 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">268013 ms</span>
+                <span class="method-start">542397 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capstone.tests.EndToEndTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">268228 ms</span>
+                <span class="method-start">542967 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">completePurchaseJourneyShouldDisplayOrderConfirmation</span>
-                <span class="method-start">271537 ms</span>
+                <span class="method-start">553904 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">273131 ms</span>
+                <span class="method-start">556470 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
